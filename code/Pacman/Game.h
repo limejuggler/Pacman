@@ -1,15 +1,19 @@
 #pragma once
+#include "Map.h"
 #include "stdafx.h"
 #include "GraphicsManager.h"
 
 class Game
 {
 private:
+	Map map;
+	static Game *instance;
+	
 	Game();
-	Game *instance;
 public:
 	~Game();
-	Game getInstance();
+	static Game *getInstance();
 
-
+	void update();
+	void draw();
 };

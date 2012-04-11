@@ -1,7 +1,8 @@
-#include "stdafx.h"
+#include "Game.h"
 
 HINSTANCE				hInst					= NULL;  
 HWND					hWnd					= NULL;
+Game					*game					= NULL;
 
 __int64 currTimeStamp = 0, prevTimeStamp = 0, cntsPerSec = 0;
 double dt, secsPerCnt;
@@ -15,9 +16,10 @@ void				Cleanup();
 int WINAPI wWinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int nCmdShow )
 {
 	hInst = hInstance;
-	//_CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );
 	if( FAILED( InitWindow( nCmdShow ) ) )
 		return 0;
+
+	game = Game::getInstance();
 
 	SetWindowPos(hWnd, HWND_TOP, 50, 50, SCREENWIDTH, _SCREENHEIGHT + 32, SWP_SHOWWINDOW);
 	
@@ -45,6 +47,7 @@ int WINAPI wWinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdL
 			
 			if(GetActiveWindow() == hWnd)
 			{
+				game->update();
 			}
 			else
 				updateTimeStamp();
@@ -133,4 +136,5 @@ LRESULT CALLBACK WndProc( HWND hw, UINT message, WPARAM wParam, LPARAM lParam )
 
 void Cleanup()
 {
+	SAFE_DELETE( game );
 }

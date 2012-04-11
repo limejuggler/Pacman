@@ -1,21 +1,25 @@
-﻿Build started 2012-04-10 13:55:14.
-     1>Project "\\saxon\embl10\visual studio 2010\Projects\Pacman\Pacman\Pacman.vcxproj" on node 2 (build target(s)).
+﻿Build started 2012-04-11 14:24:32.
+     1>Project "J:\Pacman\Code\Pacman\Pacman.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Creating "Debug\Pacman.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "Debug\Pacman.unsuccessfulbuild".
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
-         Main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Map.cpp
+         Map.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"\\saxon\embl10\visual studio 2010\Projects\Pacman\Debug\Pacman.exe" /NOLOGO d3dx10.lib d3d10.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Pacman.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"\\saxon\embl10\visual studio 2010\Projects\Pacman\Debug\Pacman.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\saxon\embl10\visual studio 2010\Projects\Pacman\Debug\Pacman.lib" /MACHINE:X86 Debug\Main.obj
-         LINK : \\saxon\embl10\visual studio 2010\Projects\Pacman\Debug\Pacman.exe not found or not built by the last incremental link; performing full link
-         Pacman.vcxproj -> \\saxon\embl10\visual studio 2010\Projects\Pacman\Debug\Pacman.exe
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"J:\Pacman\Code\Debug\Pacman.exe" /NOLOGO d3dx10.lib d3d10.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Pacman.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"J:\Pacman\Code\Debug\Pacman.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"J:\Pacman\Code\Debug\Pacman.lib" /MACHINE:X86 Debug\Game.obj
+         Debug\GraphicsManager.obj
+         Debug\Main.obj
+         Debug\Map.obj
+         Debug\Tiles.obj
+         LINK : J:\Pacman\Code\Debug\Pacman.exe not found or not built by the last incremental link; performing full link
+         Pacman.vcxproj -> J:\Pacman\Code\Debug\Pacman.exe
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"\\saxon\embl10\visual studio 2010\Projects\Pacman\Debug\Pacman.exe;#1" /manifest Debug\Pacman.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"J:\Pacman\Code\Debug\Pacman.exe;#1" /manifest Debug\Pacman.exe.intermediate.manifest
        FinalizeBuildStatus:
          Deleting file "Debug\Pacman.unsuccessfulbuild".
          Touching "Debug\Pacman.lastbuildstate".
-     1>Done Building Project "\\saxon\embl10\visual studio 2010\Projects\Pacman\Pacman\Pacman.vcxproj" (build target(s)).
+     1>Done Building Project "J:\Pacman\Code\Pacman\Pacman.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.70
+Time Elapsed 00:00:01.79
