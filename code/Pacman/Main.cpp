@@ -1,8 +1,10 @@
 #include "Game.h"
+#include "HighScore.h"
 
 HINSTANCE				hInst					= NULL;  
 HWND					hWnd					= NULL;
 Game					*game					= NULL;
+HighScore hs;
 
 __int64 currTimeStamp = 0, prevTimeStamp = 0, cntsPerSec = 0;
 double dt, secsPerCnt;
@@ -20,6 +22,7 @@ int WINAPI wWinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdL
 		return 0;
 
 	game = Game::getInstance();
+	hs = HighScore(NULL, NULL);
 
 	SetWindowPos(hWnd, HWND_TOP, 50, 50, SCREENWIDTH, _SCREENHEIGHT + 32, SWP_SHOWWINDOW);
 	
@@ -137,4 +140,5 @@ LRESULT CALLBACK WndProc( HWND hw, UINT message, WPARAM wParam, LPARAM lParam )
 void Cleanup()
 {
 	SAFE_DELETE( game );
+	//SAFE_DELETE( hs );
 }
